@@ -156,5 +156,8 @@ button {
   body {
     flex-direction: column;
   }
+  .background-image {
+    min-height: 50vh;
+  }
 }
 
