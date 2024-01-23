@@ -1,12 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Roboto";
+    display: flex;
+}
+
+.page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
+.background-image {
+  background: url('./images/background-image.jpg');
+  min-height: 100vh;
+  min-width: 40vw; /* Adjust the width percentage as needed */
+  background-size: cover;
+}
+
+/* .responsive {
+  max-width: 100%;
+  height: auto;
+} */
 
 .top {
   background-color: rgb(245, 245, 245);
@@ -14,6 +34,7 @@ body {
   display: flex;
   padding: 2rem;
 }
+
 
 .middle {
   display: flex;
@@ -77,13 +98,12 @@ input {
   padding: 5px;
   border: 1px solid rgb(217, 217, 217);
   border-radius: 4px;
-  /* padding-inline: 10px; */
   transition: 0.3s;
 }
-
-input:invalid:focus{
+/* 
+input:invalid:focus {
   border: 1.5px solid rgb(255, 0, 0);
-}
+} */
 
 input:focus {
   appearance: none;
@@ -105,15 +125,16 @@ button {
   box-shadow: 2px 2px 4px #a6a6a6;
 }
 
-@media only screen and (max-width: 660px) {
+.error {
+  border: solid rgb(198, 0, 0);
+  border-width: 0.6px;
+}
+
+@media only screen and (max-width: 1100px) {
   form {
     flex-direction: column;
     gap: 0px;
   }
-
-  /* input {
-    width: 200%;
-  } */
 
   .form-set {
     display: flex;
@@ -122,7 +143,7 @@ button {
   }
 
   .form-row {
-    width: 96%;
+    width: 100%;
     margin-block: 16px;
   }
 
@@ -130,3 +151,10 @@ button {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
+
