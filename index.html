@@ -92,6 +92,7 @@
                 maxlength="256"
                 class="error"
               />
+              <div class="error-message"></div>
             </div>
             <div class="form-row">
               <label for="password">CONFIRM PASSWORD*</label>
@@ -110,7 +111,7 @@
       </div>
       <div class="bottom">
         <div class="form-row">
-          <button form="signup-form" type="submit" onclick="validatePassword()">
+          <button form="signup-form" type="submit" onclick="return validatePassword()">
             Create Account
           </button>
           <p>Already have an account? <a href="url">Log in</a></p>

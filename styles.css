@@ -107,16 +107,22 @@ input {
   border-radius: 4px;
   transition: 0.3s;
 }
-/* 
+
 input:invalid:focus {
-  border: 1.5px solid rgb(255, 0, 0);
-} */
+  border: 1.5px solid rgb(198, 0, 0);
+}
 
 input:focus {
   appearance: none;
   box-shadow: 2px 2px 4px #a6a6a6;
   outline: none;
   border: 1.5px solid rgb(0, 94, 255);
+}
+
+.error-message {
+  color: rgb(198, 0, 0);
+  font-size: 11px;
+  font-weight: 400;
 }
 
 button {
@@ -143,10 +149,7 @@ button {
   color: white;
   font-size: 13px;
 }
-.error {
-  border: solid rgb(198, 0, 0);
-  border-width: 0.6px;
-}
+
 
 @media only screen and (max-width: 1100px) {
   form {
@@ -175,6 +178,6 @@ button {
     flex-direction: column;
   }
   .background-image {
-    min-height: 50vh;
+    min-height: 75vh;
   }
 }
