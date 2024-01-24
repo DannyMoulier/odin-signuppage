@@ -27,6 +27,7 @@ body {
   align-items: center;
   color: white;
   font-size: 140px;
+  font-weight: 100;
   position: relative;
 }
 
@@ -60,17 +61,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  max-width: 650px;
 }
 
 .top p,
 .middle p {
   font-size: 1.5rem;
-  font-weight: 450;
+  font-weight: 200;
 }
 
 .middle p {
   margin: 0px;
-  margin-top: 12px;
 }
 
 form {
@@ -98,6 +99,7 @@ label {
 .form-set {
   display: flex;
   gap: 6rem;
+  margin-top: 12px;
 }
 
 input {
@@ -133,7 +135,7 @@ button {
   background-color: rgb(130, 113, 99);
   color: white;
   border-radius: 7px;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 1rem;
   box-shadow: 2px 2px 4px #a6a6a6;
   margin-bottom: 20px;
@@ -141,13 +143,17 @@ button {
 
 .form-row a {
   text-decoration: none; 
-  font-weight: 700;
+  font-weight: 300;
   color: rgb(130, 113, 99);
 }
 
 .background-image a {
   color: white;
   font-size: 13px;
+}
+
+.log-in {
+  font-weight: 300;
 }
 
 
