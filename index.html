@@ -78,7 +78,7 @@
                 id="phone_number"
                 name="phone_number"
                 maxlength="15"
-                pattern="[0-9]{10}"
+                pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
               />
             </div>
           </div>
@@ -93,6 +93,7 @@
                 minlength="8"
                 maxlength="256"
                 class="error"
+                onchange="return validatePassword()"
               />
               <div class="error-message"></div>
             </div>
@@ -106,6 +107,7 @@
                 minlength="8"
                 maxlength="256"
                 class="error"
+                onchange="return validatePassword()"
               />
             </div>
           </div>

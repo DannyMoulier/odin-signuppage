@@ -166,6 +166,7 @@ button {
   font-size: 1rem;
   /* box-shadow: 2px 2px 4px #a6a6a6; */
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .form-row a {
