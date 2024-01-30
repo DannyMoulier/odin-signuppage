@@ -66,6 +66,7 @@
                 id="email"
                 name="email"
                 required
+                pattern="[^@]+@[^@.]+\.[^@]+"
                 minlength="5"
                 maxlength="50"
               />
@@ -73,10 +74,11 @@
             <div class="form-row">
               <label for="phone_number">PHONE NUMBER</label>
               <input
-                type="number"
+                type="tel"
                 id="phone_number"
                 name="phone_number"
                 maxlength="15"
+                pattern="[0-9]{10}"
               />
             </div>
           </div>

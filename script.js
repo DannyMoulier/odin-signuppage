@@ -6,7 +6,7 @@ function validatePassword() {
 
   if (pass1.value !== pass2.value) {
     errorInputs.forEach((errorInput) => {
-      errorInput.style.border = "solid rgb(198, 0, 0)";
+      errorInput.style.border = "1.5px solid rgb(198, 0, 0)";
     });
     errorMessage.innerText = "Passwords do not match"
     return false;
